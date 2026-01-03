@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>贪吃蛇 - Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="game">
+    <header class="game__header">
+      <div>
+        <h1>贪吃蛇</h1>
+        <p class="game__hint">使用方向键或 WASD 控制移动，按空格暂停。</p>
+      </div>
+      <div class="game__status">
+        <div>得分：<span id="score">0</span></div>
+        <div>最高分：<span id="highScore">0</span></div>
+      </div>
+    </header>
+
+    <section class="game__board">
+      <canvas id="board" width="480" height="480" aria-label="贪吃蛇游戏棋盘"></canvas>
+    </section>
+
+    <section class="game__controls">
+      <button id="startButton" type="button">开始游戏</button>
+      <button id="restartButton" type="button">重新开始</button>
+    </section>
+
+    <section class="game__legend">
+      <div><span class="legend legend--snake"></span>蛇身</div>
+      <div><span class="legend legend--food"></span>食物</div>
+      <div><span class="legend legend--grid"></span>棋盘</div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
