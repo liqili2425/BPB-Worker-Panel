@@ -9,3 +9,5 @@
 !docs/**
 !.github/
 !.github/**
+!snake-game/
+!snake-game/**
